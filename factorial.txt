@@ -1,0 +1,14 @@
+   declare
+    a number;
+    function fact(num number) return number is
+    factorial number:=1;
+    begin
+    for i in 1..num loop
+    factorial:= factorial*i;
+    end loop;
+   return factorial;
+   end;
+   begin
+   a:=&a;
+   dbms_output.put_line('the factorial is: '||fact(a));
+  end;
